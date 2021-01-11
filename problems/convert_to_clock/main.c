@@ -1,5 +1,6 @@
 #include <stdio.h>
-void convertToClock(int value){
+
+void convert_to_clock(int value){
     int hour, min;
     hour = value/60;
     min = value-(60*hour);
@@ -11,6 +12,6 @@ int main() {
     int value;
     printf("Give a value!\n");
     scanf("%d", &value);
-    convertToClock(value);
+    convert_to_clock(value);
     return 0;
 }

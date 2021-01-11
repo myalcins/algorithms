@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "string.h"
 
-void reverseWord(char input[]){
+void reverse_word(char input[]){
     int begin = strlen(input);
     char output[begin];
     int index = 0;
@@ -15,8 +15,8 @@ void reverseWord(char input[]){
 
 int main(){
     char input[100];
-    printf("Give to words");
+    printf("Give a 'word'");
     scanf("%s", &input);
-    reverseWord(input);
+    reverse_word(input);
     return 0;
 }
