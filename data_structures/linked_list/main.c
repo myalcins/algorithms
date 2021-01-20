@@ -7,15 +7,13 @@ typedef struct{
 }Node;
 
 Node * create_head(){
-    Node * head;
-    head = (Node *)malloc(sizeof (Node *));
+    Node * head = (Node *)malloc(sizeof (Node));
     head->next = NULL;
     return head;
 }
 
 Node * create_node(int value){
-    Node * new;
-    new = (Node *)malloc(sizeof (Node *));
+    Node * new = (Node *)malloc(sizeof (Node));
     new->value = value;
     new->next = NULL;
     return new;
